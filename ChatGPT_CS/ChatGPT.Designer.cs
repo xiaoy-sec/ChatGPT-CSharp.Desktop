@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChatGPT));
             this.btnSend = new System.Windows.Forms.Button();
             this.Label4 = new System.Windows.Forms.Label();
             this.cbModel = new System.Windows.Forms.ComboBox();
@@ -223,9 +224,10 @@
             this.Controls.Add(this.cbModel);
             this.Controls.Add(this.btnSend);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ChatGPT";
-            this.Text = "Chat GPT";
+            this.Text = "Chat GPT CSharp";
             this.Load += new System.EventHandler(this.ChatGPT_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
